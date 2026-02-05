@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMart - Electronics & Gadgets Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        .hero-section {
+            height: 100vh;
+            background: url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600") center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            height: 100%;
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-cpu"></i> TechMart
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="bi bi-cart3"></i> Cart
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay d-flex align-items-center">
+            <div class="container">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold text-white mb-3">Welcome to TechMart</h1>
+                    <p class="lead text-white mb-4">
+                        Your one-stop shop for the latest electronics, gadgets, and tech accessories.
+                    </p>
+                    <a href="#products" class="btn btn-primary btn-lg me-2">Shop Now</a>
+                    <a href="#categories" class="btn btn-outline-light btn-lg">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Shop by Category</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop"
+                            class="card-img-top" alt="Smartphones">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Smartphones</h5>
+                            <p class="text-muted">Latest mobile devices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=300&fit=crop"
+                            class="card-img-top" alt="Laptops">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Laptops</h5>
+                            <p class="text-muted">Powerful computing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop"
+                            class="card-img-top" alt="Accessories">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Accessories</h5>
+                            <p class="text-muted">Must-have gadgets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Products</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+                            class="card-img-top" alt="Smartphone">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Pro X</h5>
+                            <p class="text-primary fw-bold">$899.99</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="cart.html" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=400&h=400&fit=crop"
+                            class="card-img-top" alt="Earbuds">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Earbuds</h5>
+                            <p class="text-primary fw-bold">$149.99</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="cart.html" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop"
+                            class="card-img-top" alt="Laptop">
+                        <div class="card-body">
+                            <h5 class="card-title">UltraBook Laptop</h5>
+                            <p class="text-primary fw-bold">$1299.99</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="cart.html" class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="bi bi-cpu"></i> TechMart</h5>
+                    <p>Quality electronics for everyone.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h6>Contact</h6>
+                    <p><i class="bi bi-envelope"></i> info@techmart.com</p>
+                    <p><i class="bi bi-telephone"></i> +1 234 567 890</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+            <p class="text-center mb-0">&copy; 2025 TechMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
